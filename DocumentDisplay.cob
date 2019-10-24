@@ -2,7 +2,8 @@
        PROGRAM-ID. DOCUMENT_DISPLAY.
       *********************************************
       ***    AREA DE COMENTARIOS
-      ***    OBJETIVO DO PROGRAMA: MOSTRAR O HELLO WORLD
+      ***    OBJETIVO DO PROGRAMA: RECEBER UM CPF VIA CONSOLE E IMPRIMIR
+      ***    O CPF FORMATADO
       ***    AUTHOR: LUCAS OLIVEIRA(LooKs)
       ***    DATA: 23/10/2019
       *********************************************

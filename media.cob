@@ -1,0 +1,23 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. MEDIA.
+      *********************************************
+      ***    AREA DE COMENTARIOS
+      ***    OBJETIVO DO PROGRAMA: RECEBE DOIS NUMERO E MOSTRA A MÉDIA
+      ***    AUTHOR: LUCAS OLIVEIRA(LooKs)
+      ***    DATA: 23/10/2019
+      *********************************************
+       ENVIRONMENT DIVISION.
+       DATA  DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WK-PRIMEIRO-NUMERO         PIC   9(3)  VALUE ZEROES.
+       77 WK-SEGUNDO-NUMERO          PIC   9(3)  VALUE ZEROES.
+       77 WK-RESULTADO               PIC   9(3)  VALUE ZEROES.
+       PROCEDURE DIVISION.
+          DISPLAY 'INSIRA O PRIMEIRO NUMERO: '
+          ACCEPT WK-PRIMEIRO-NUMERO.
+          DISPLAY 'INSIRA O SEGUNDO NUMERO: '
+          ACCEPT WK-SEGUNDO-NUMERO.
+          ADD WK-PRIMEIRO-NUMERO  WK-SEGUNDO-NUMERO TO WK-RESULTADO.
+          DIVIDE WK-RESULTADO BY 2 GIVING WK-RESULTADO.
+          DISPLAY 'A MÉDIA É: ' WK-RESULTADO.
+          STOP RUN.
