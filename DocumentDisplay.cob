@@ -1,0 +1,22 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. DOCUMENT_DISPLAY.
+      *********************************************
+      ***    AREA DE COMENTARIOS
+      ***    OBJETIVO DO PROGRAMA: MOSTRAR O HELLO WORLD
+      ***    AUTHOR: LUCAS OLIVEIRA(LooKs)
+      ***    DATA: 23/10/2019
+      *********************************************
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+          SPECIAL-NAMES.
+             DECIMAL-POINT IS COMMA.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WK-DOCUMENT                PIC   9(11) VALUE ZEROES.
+       77 WK-DOCUMENT-FORMAT         PIC ZZZ.ZZZ.ZZZ.ZZ VALUE ZEROES.
+       PROCEDURE DIVISION.
+          DISPLAY 'INSIRA O SEU CPF'.
+          ACCEPT WK-DOCUMENT FROM CONSOLE.
+          MOVE WK-DOCUMENT TO WK-DOCUMENT-FORMAT.
+          DISPLAY 'SEU CPF FORMATADO É:' WK-DOCUMENT-FORMAT.
+          STOP RUN.
